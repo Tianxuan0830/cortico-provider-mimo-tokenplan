@@ -1,0 +1,41 @@
+{
+  "name": "cortico-provider-mimo-tokenplan",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Cortico provider for Xiaomi MiMo Token Plan subscription endpoint (OpenAI Chat Completions)",
+  "author": "DSH assistant",
+  "license": "MIT",
+  "keywords": [
+    "cortico-provider",
+    "cortico",
+    "xiaomi",
+    "mimo",
+    "token-plan",
+    "llm"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "main": "./src/index.ts",
+  "cortico": {
+    "kind": "provider",
+    "api": 6,
+    "describe": "describe.json"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "CHANGELOG.md",
+    "describe.json"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "cortico": "^0.2.17",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
